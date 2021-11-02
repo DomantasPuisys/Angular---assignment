@@ -1,0 +1,73 @@
+.calendar-header {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.calendar-header h2 {
+	margin: 0;
+}
+
+.calendar-header-button {
+	display: block;
+	margin: 0 0 0 auto;
+}
+
+.calendar-header-button:hover {
+	cursor: pointer;
+}
+
+.weekend {
+	color: #A1A1A1;
+}
+
+.entry {
+	text-align: center;
+}
+
+.entry h4 {
+	margin-bottom: 10px;
+}
+
+.entry h2 {
+	width: 38px;
+	height: 38px;
+	border:  1px solid #FFF;
+}
+
+.entry h2:hover {
+	border:  1px solid #F08900;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.entry h2 span {
+	display: block;
+	padding: 0;
+	margin: auto 0;
+	line-height: 38px;
+}
+
+.entry .active {
+	border:  1px solid #F08900;
+	border-radius: 4px;
+}
+
+.dot .mat-icon {
+	font-size: unset;
+}
+
+.entry .none {
+	color: #FFF;
+}
+
+.entry .green {
+	color: #27ae60;
+}
+
+.entry .red {
+	color: #c0392b;
+}
+
+.entry .grey {
+	color:  #A6A6A6;
+}

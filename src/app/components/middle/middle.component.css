@@ -1,0 +1,15 @@
+.middle-header {
+	display: flex;
+	margin: 15px 0;
+}
+
+.middle-header h4 {
+	margin: auto 0;
+}
+
+.middle-header h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #F08900;
+	margin: auto 0 auto auto;
+}

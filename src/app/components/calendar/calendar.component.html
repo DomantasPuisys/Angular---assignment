@@ -1,0 +1,27 @@
+
+<div class="calendar-header">
+	<h2>{{ thisMonth }} {{ thisYear }}</h2>
+	<div class="calendar-header-button" (click) = "goToToday()">
+		<mat-icon aria-hidden="false" aria-label="Go to today">today</mat-icon>
+	</div>
+</div>
+<div class="calendar-content">
+	<mat-grid-list cols='7' rowHeight="180px">
+		<mat-grid-tile *ngFor="let day of weekList">
+			<div class="entry {{ day.type }}">
+				<h4>{{ day.day }}</h4>
+				<h2 
+					(click) = "activateStatus(day)"
+					[ngClass] = "{'active': day.status}"
+				>
+					<span>{{ day.date }}</span>
+				</h2>
+				<h4>{{ day.workHours }}</h4>
+				<h5 class="dot {{ day.dotStatus }}">
+					<mat-icon aria-hidden="false" aria-label="Go to today">fiber_manual_record</mat-icon>
+				</h5>
+			</div>
+		</mat-grid-tile>
+	</mat-grid-list>
+</div>
+<mat-divider></mat-divider>
